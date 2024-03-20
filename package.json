@@ -1,0 +1,61 @@
+{
+  "name": "ipa-tetris-js-game",
+  "version": "1.0.0",
+  "description": "Adaptation of the classic game tetris",
+  "main": "dist/js/ipa-tetris-game.js",
+  "module": "dist/js/ipa-tetris-game.esm.js",
+  "sass": "src/scss/ipa-tetris-game.scss",
+  "style": "dist/css/ipa-tetris-game.min.css",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "npm run production",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=4096 webpack",
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development NODE_OPTIONS=--max_old_space_size=4096 webpack",
+    "serve": "webpack serve --open",
+    "clear-cache": "cd ./node_modules && rm -r ./.cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkdiesel/ipa-tetris-game-js"
+  },
+  "keywords": [
+    "game",
+    "javascript",
+    "sass",
+    "css",
+    "tetris"
+  ],
+  "author": "Igor Peshkov",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "copy-webpack-plugin": "^12.0.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.9.1",
+    "mini-css-extract-plugin": "^2.7.7",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^11.0.0",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-combine-media-query": "^1.0.1",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^16.0.0",
+    "postcss-loader": "^8.0.0",
+    "postcss-merge-rules": "^6.0.3",
+    "postcss-sort-media-queries": "^5.2.0",
+    "postcss-will-change": "^4.0.1",
+    "sass-loader": "^14.0.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-remove-empty-scripts": "^1.0.4",
+    "progress-webpack-plugin": "^1.0.16"
+  },
+  "dependencies": {
+    
+  }
+}
